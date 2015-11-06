@@ -5,7 +5,7 @@ Simple app built to show how **Redux** works, it's a good starting point to
 create something more complex.
 
 To keep things really simple, it depends on [redux-easy-app](https://github.com/poetcyborg/redux-easy-app),
-which allows the app to not know anything about Redux and keep the components dumb.
+which allows the app to be unaware of Redux and keep the components dumb.
 
 
 Features

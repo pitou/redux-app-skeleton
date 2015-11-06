@@ -29,6 +29,8 @@ Then launch the app using:
 
     npm run dev
 
+Finally, go to http://localhost:3000 to see it.
+
 
 Inspirations
 ------------

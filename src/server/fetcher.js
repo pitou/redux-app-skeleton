@@ -27,6 +27,6 @@ export default function(path, store) {
         }
     }
 
-    console.log(`Fetcher --> No route matched`);
+    console.log(`Fetcher --> No server side route matched, nothing to prefetch`);
     return Promise.resolve(true);
 }

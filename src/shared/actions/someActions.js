@@ -36,7 +36,6 @@ export function fetchRandomText() {
             .then(response => response.json())
             .then(json => {
                 console.log("Async action --> Json fetched");
-                console.log(json);
 
                 dispatch(receiveRandomText(json.text_out))
             });

@@ -21,7 +21,7 @@ How to use
 
 First you need to install some dependencies:
 
-    npm install -g babel@5 webpack
+    npm install -g babel@5 webpack nodemon
 
     npm install
 

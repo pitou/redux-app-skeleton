@@ -26,14 +26,15 @@
   "dependencies": {
     "babel-runtime": "^5.8.29",
     "express": "^4.13.3",
-    "history": "^1.17.0",
+    "history": "^2.0.0-rc2",
     "invariant": "^2.2.0",
-    "isomorphic-fetch": "^2.2.0",
-    "methods": "^1.1.1",
-    "react": "^0.14.5",
-    "react-dom": "^0.14.5",
-    "react-router": "^1.0.3",
-    "redux-easy-app": "^0.1.9",
+    "isomorphic-fetch": "^2.2.1",
+    "methods": "^1.1.2",
+    "node-libs-browser": "^0.5.3",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "react-router": "^2.0.0-rc5",
+    "redux-easy-app": "^0.1.24",
     "warning": "^2.1.0"
   },
   "devDependencies": {

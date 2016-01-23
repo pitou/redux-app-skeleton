@@ -8,13 +8,13 @@ export default class extends React.Component {
             <div>
                 <div className="links">
                     <div>
-                        <Link to={'/'}>Home page</Link>
+                        <Link to='/'>Home page</Link>
                     </div>
                     <div>
-                        <Link to={'/randomText'}>Show random text</Link>
+                        <Link to='/randomText'>Show random text</Link>
                     </div>
                     <div>
-                        <Link to={'/about'}>About</Link>
+                        <Link to='/about'>About</Link>
                     </div>
                 </div>
                 <div>

@@ -8,8 +8,6 @@ import routesFetchersMap from './routesFetchersMap';
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, '../../assets')));
-
 startServerApp(app, {
     routes,
     reducers,

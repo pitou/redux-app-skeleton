@@ -27,7 +27,7 @@ First you need to install some dependencies:
 
 Then launch the app using:
 
-    npm run dev
+    npm start
 
 Finally, go to http://localhost:3000 to see it.
 

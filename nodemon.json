@@ -1,6 +1,0 @@
-{
-  "env": { "NODE_ENV": "development" },
-  "ext": "js html",
-  "watch": [ "lib/", "views/" ],
-  "quiet": true
-}

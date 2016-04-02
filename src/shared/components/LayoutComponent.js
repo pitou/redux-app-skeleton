@@ -1,7 +1,7 @@
-import React from 'react';  // eslint-disable-line no-unused-vars
+import React, { PropTypes } from 'react';  // eslint-disable-line no-unused-vars
 import { Link } from 'react-router';
 
-export default class extends React.Component {
+class LayoutComponent extends React.Component {
 
     render() {
         return (
@@ -23,4 +23,10 @@ export default class extends React.Component {
             </div>
         );
     }
+}
+
+LayoutComponent.propTypes = {
+    children: PropTypes.object.isRequired,
 };
+
+export default LayoutComponent;

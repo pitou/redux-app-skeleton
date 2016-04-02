@@ -6,14 +6,13 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'inline-source-map',
   entry: [
-    'webpack-dev-server/client?http://localhost:3001',
-    'webpack/hot/only-dev-server',
+    'webpack-hot-middleware/client',
     './src/client/app'
   ],
   output: {
     path: path.join(__dirname, '/dist/js/'),
     filename: 'app.js',
-    publicPath: 'http://localhost:3001/js/'
+    publicPath: 'http://localhost:3000/js/'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -28,7 +27,7 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: ['react-hot', 'babel?stage=0&experimental&optional[]=runtime', 'eslint'],
+      loaders: ['babel', 'eslint'],
       exclude: /node_modules/
     }]
   }

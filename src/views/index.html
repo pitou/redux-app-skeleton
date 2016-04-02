@@ -55,7 +55,7 @@
         <script>window.env = "{{env.NODE_ENV}}"</script>
 
         {% if env.NODE_ENV == 'development' %}
-            <script src="http://localhost:3001/js/app.js" defer></script>
+            <script src="/js/app.js" defer></script>
         {% else %}
             <script src="/js/app.min.js" defer></script>
         {% endif %}

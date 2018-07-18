@@ -1,12 +1,12 @@
-import React from 'react';  // eslint-disable-line no-unused-vars
-import ReactDOM from 'react-dom';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-const { Component, PropTypes } = React;
+const newTitleRef = React.createRef();
 
 class IndexComponent extends Component {
 
     changeTitle() {
-        this.props.changeTitle(ReactDOM.findDOMNode(this.refs.newTitle).value);
+        this.props.changeTitle(newTitleRef.current.value);
     }
 
     render() {
@@ -16,7 +16,7 @@ class IndexComponent extends Component {
                     <h1>Welcome to {this.props.appTitle}</h1>
                 </div>
                 <div className="welcome">
-                    <input type="text" ref="newTitle" defaultValue={this.props.appTitle} />
+                    <input type="text" ref={newTitleRef} defaultValue={this.props.appTitle} />
 
                     <button onClick={this.changeTitle.bind(this)}>Change title</button>
                 </div>

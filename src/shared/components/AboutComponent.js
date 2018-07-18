@@ -11,7 +11,7 @@ class AboutComponent extends Component {
                     Thanks for trying this small app :)
                 </div>
                 <div>
-                    Now you're ready to build your own, have fun with React + Redux!
+                    Now you&apos;re ready to build your own, have fun with React + Redux!
                 </div>
             </div>
         );

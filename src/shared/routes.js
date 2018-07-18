@@ -1,4 +1,4 @@
-import React from 'react';  // eslint-disable-line no-unused-vars
+import React from 'react';
 import { Route, NoMatch, IndexRoute } from 'react-router';
 
 import LayoutComponent from './components/LayoutComponent';

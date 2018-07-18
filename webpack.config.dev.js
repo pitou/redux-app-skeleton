@@ -4,9 +4,10 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
+  mode: 'development',
   devtool: 'inline-source-map',
   entry: [
-    'webpack-hot-middleware/client',
+    'babel-polyfill',
     './src/client/app'
   ],
   output: {
@@ -16,19 +17,27 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     })
   ],
   resolve: {
-    extensions: ['', '.js']
+    alias: {
+      'react-addons-shallow-compare': 'react/lib/shallowCompare'
+    },
+    modules: [
+      path.join(__dirname, './src'),
+      path.join(__dirname, './node_modules'),
+    ]
   },
   module: {
-    loaders: [{
+    rules: [{
       test: /\.js$/,
-      loaders: ['babel', 'eslint'],
-      exclude: /node_modules/
+      use: ['babel-loader', 'eslint-loader'],
+      include: [
+        path.resolve(__dirname, './src'),
+      ]
     }]
   }
 };
